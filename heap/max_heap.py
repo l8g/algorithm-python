@@ -39,6 +39,7 @@ class max_heap:
         if right <= self.count and self.data[left] < self.data[right]:
             max = right
         self.data[index], self.data[max] = self.data[max], self.data[index]
+        self._shift_down(max)
 
 
 
